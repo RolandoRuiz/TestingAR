@@ -37,7 +37,7 @@ window.addEventListener('resize', () =>
 })
 
 const loader = new GLTFLoader();
-loader.load("https://github.com/RolandoRuiz/TestingAR/blob/gh-pages/3DModels/untitled.gltf",
+loader.load("3DModels/untitled.glb",
       (gltf) => {
         gltf.scene.scale.multiplyScalar(1 / 0.5) // adjust scalar factor to match your scene scale
         gltf.scene.position.x = 0 // once rescaled, position the model where needed
